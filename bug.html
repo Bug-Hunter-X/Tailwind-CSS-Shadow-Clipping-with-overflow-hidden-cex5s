@@ -1,0 +1,11 @@
+```javascript
+// ... some Tailwind CSS classes ...
+<div class="bg-gray-100 p-4 rounded-lg shadow-md">
+  <p class="text-gray-700 text-lg font-bold mb-2">Some text here</p>
+  <p class="text-gray-500 text-sm">More text here.</p>
+</div>
+```
+
+The problem arises when you have a parent container with overflow-hidden applied and the child content exceeds the parent's boundaries. Even with the shadow-md utility, the shadow will be clipped due to the overflow-hidden on the parent.
+
+This is not immediately obvious and can lead to unexpected visual results, as the shadow will appear truncated, creating a jarring visual effect.
